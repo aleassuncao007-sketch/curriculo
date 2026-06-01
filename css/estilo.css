@@ -19,7 +19,6 @@ body {
   min-height: 100vh;
 }
 
-
 /*RESPONSIVIDADE*/
 
 /* 1. ESTILO PADRÃO (MOBILE - abaixo de 992px) */
@@ -81,8 +80,6 @@ main {
     gap: 20px;
   }
 }
-
-/* CORES */
 
 /* ESTRUTURA DO SITE */
 
@@ -158,5 +155,9 @@ section:last-child {
   width: 64px;
   height: 64px;
   margin: 10px;
+}
+
+.active{
+  border-left: solid 2px white;
 }
 
