@@ -79,6 +79,13 @@ main {
     align-items: center;
     gap: 20px;
   }
+
+  .nav-link.active{
+    box-shadow: none; /* Remove a sombra no mobile para não poluir o topo */
+    border-bottom: 3px solid rgb(243, 243, 243); /* Em vez de fundo cheio, adiciona uma linha embaixo */
+    background-color: transparent;
+    color: white !important;
+  }
 }
 
 /* ESTRUTURA DO SITE */
@@ -107,6 +114,20 @@ p {
   transition: all 0.3s ease;
   display: block;
   padding: 10px;
+  position: relative; /* Necessário para os efeitos de linha/borda abaixo */
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Um leve brilho ao passar o mouse */
+  color: #F3F3F3;
+}
+
+.nav-link.active {
+  color: #35332D !important;          /* Muda a cor do texto para contrastar */
+  background-color: rgb(243, 243, 243); /* Fundo claro idêntico ao das suas caixas de imagem */
+  font-weight: 700;                   /* Texto em negrito para destacar */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Uma sombra sutil para dar profundidade */
 }
 
 /*4. SEÇÕES (Todas Iguais) */
@@ -155,9 +176,5 @@ section:last-child {
   width: 64px;
   height: 64px;
   margin: 10px;
-}
-
-.active{
-  border-left: solid 2px white;
 }
 
